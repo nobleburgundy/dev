@@ -2,6 +2,7 @@ body {
     background-color: #F7F7FF;
 }
 
-.nav-item {
+/* Add some spacing for social media links in footer */
+footer .fab {
     padding-left: 2rem;
 }
