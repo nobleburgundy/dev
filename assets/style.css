@@ -6,3 +6,12 @@ body {
 footer .fab {
     padding-left: 2rem;
 }
+
+.portfolio-img {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.portfolio-img:hover {
+    opacity: 1;
+}
