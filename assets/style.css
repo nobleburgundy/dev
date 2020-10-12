@@ -15,3 +15,11 @@ footer .fab {
 .portfolio-img:hover {
     opacity: 1;
 }
+
+.show {
+    display: inline;
+}
+
+.hide {
+    display: none;
+}

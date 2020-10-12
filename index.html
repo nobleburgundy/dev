@@ -34,6 +34,8 @@
                 <h1 class="p-2">About Me</h1>
                 <img src="./assets/img/jcg_piano.jpg" alt="About Me Image" class="img-fluid rounded float-left mr-2"
                     id="about-img" />
+                <img src="./assets/img/townes2.jpg" alt="Townes the Cat" class="img-fluid rounded float-left mr-2 hide"
+                    id="townes-img" />
                 <p class="font-weight-light">
                     I write code. I write music. I write words sometimes, though not well. I play guitar. I play piano.
                     I play with code. I play golf. I play hockey because I live in Minnesota and it's one of the few
@@ -45,7 +47,7 @@
                     coding. I love building things, especially
                     software. I love food. My wife loves food even more than I do and it shows in her cooking. I love
                     her. I love her cooking. I love
-                    cats, espcially my kitten named <strong>Townes</strong> (after <a
+                    cats, espcially my kitten named <strong><a href="#0" id="townes-link">Townes</a></strong> (after <a
                         href="https://open.spotify.com/artist/3ZWab2LEVkNKiBPIClTwof" target="_blank">Townes
                         Van
                         Zandt</a>).</p>
@@ -71,13 +73,20 @@
             </ul>
         </nav>
     </footer>
-    <!-- Some JS libraries required to get navbar toggle to work -->
+    <!-- Some JS libraries required to get collapsible navbar toggle to work -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $('#townes-link').hover(function () {
+            $('#townes-img').toggleClass('hide');
+            $('#townes-img').toggleClass('show');
+            $('#about-img').toggleClass('hide');
+        });
+    </script>
 </body>
 
 </html>
