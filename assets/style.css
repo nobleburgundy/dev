@@ -1,5 +1,12 @@
+/* Added padding on the bottom to fix issue where 
+footer was covering text at certain break points. */
 body {
     background-color: #F7F7FF;
+    padding-bottom: 2rem;
+}
+
+article {
+    overflow: scroll;
 }
 
 /* Add some spacing for social media links in footer */
