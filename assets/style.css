@@ -1,5 +1,14 @@
 /* Added padding on the bottom to fix issue where 
 footer was covering text at certain break points. */
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    text-shadow: 5px 1px #dfdfdf;
+}
+
 body {
     background-color: #F7F7FF;
     padding-bottom: 2rem;
