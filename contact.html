@@ -34,20 +34,20 @@
         <article class="row">
             <div class="col-sm-6">
                 <h1 class="pt-5">Contact</h1>
-                <form>
+                <form action="https://formspree.io/goul0076@gmail.com" method="POST">
                     <div class="form-group">
                         <label for="nameInput">Name:</label>
                         <input type="text" class="form-control" id="nameInput" />
                     </div>
                     <div class="form-group">
                         <label for="emailInput">Email:</label>
-                        <input type="email" class="form-control" id="emailInput" />
+                        <input type="email" name="_replyto" class="form-control" id="emailInput" />
                     </div>
                     <div class="form-group">
                         <label for="messageBox">Message:</label>
-                        <textarea class="form-control" id="messageBox"></textarea>
+                        <textarea class="form-control" id="messageBox" name="body"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-outline-primary" disabled>Submit</button>
+                    <button type="submit" class="btn btn-outline-primary" value="Send">Submit</button>
                     <small class="form-text text-muted">Not hooked up yet. In the meantime, feel free to send me a
                         message via <a href="mailto:goul0076@gmail.com">email</a>.</small>
                 </form>

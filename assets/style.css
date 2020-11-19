@@ -9,13 +9,12 @@ footer was covering text at certain break points. */
     text-shadow: 5px 1px #dfdfdf;
 }
 
-body {
-    background-color: #F7F7FF;
-    padding-bottom: 2rem;
+p {
+    font-size: 1rem;
 }
 
-article {
-    overflow: scroll;
+body {
+    padding-bottom: 2rem;
 }
 
 /* Add some spacing for social media links in footer */
