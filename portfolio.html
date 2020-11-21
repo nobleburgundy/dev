@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b34966f7b7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="./assets/style.css">
     <title>Portfolio</title>
 </head>
@@ -14,13 +17,14 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-light">
-            <a href="index.html" class="navbar-brand">James Gould</a>
+            <a href="index.html" class="navbar-brand">JAMES GOULD</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
+                    <li><audio src="..." autoplay></audio></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
@@ -32,27 +36,136 @@
         <article class="row">
             <div class="col-sm-10">
                 <h1 class="p-2">Portfolio</h1>
-                <a href="https://nobleburgundy.github.io/weather-jamz/"
-                    title="Anemoi: A weather and music mashup site."><img src="./assets/img/anemoi.png"
-                        class="img-thumbnail img-fluid portfolio-img" alt="Anemoi Weather and Music" /></a>
-                <a href="https://nobleburgundy.github.io/jcg-weather-dashboard" title="Weather Dash"><img
-                        src="./assets/img/weather_dash.png" class="img-thumbnail img-fluid portfolio-img"
-                        alt="Weather Dashboard" /></a>
-                <a href="https://nobleburgundy.github.io/jcg-coding-quiz" title="Coding Quiz"><img -
-                        src="./assets/img/coding_quiz.png" class="img-thumbnail img-fluid portfolio-img" -
-                        alt="Coding Quiz" /></a>
-                <a href="https://nobleburgundy.github.io/jcg-day-planner" title="Simple Day Planner"><img -
-                        src="./assets/img/day_planner.png" class="img-thumbnail img-fluid portfolio-img" -
-                        alt="Day Planner" /></a>
-                <a href="https://github.com/nobleburgundy/pizza-club" title="Welcome to Pizza Club!"><img -
-                        src="./assets/img/pizza_club.png" class="img-thumbnail img-fluid portfolio-img" -
-                        alt="Pizza Club" /></a>
-                <a href="https://nobleburgundy.github.io/" target="_blank"
-                    title="Personal music and gig listing site."><img src="./assets/img/personal_site.png"
-                        class="img-thumbnail img-fluid portfolio-img"
-                        alt="Personal music and gig listing image link." /></a>
-            </div>
-            <div class="col-sm-2"></div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="./assets/img/anemoi.png" class="card-img" alt="Anemoi">
+                            <div class="card-img-overlay">
+                                <h2 class="card-title"><a href="https://nobleburgundy.github.io/weather-jamz/"
+                                        target="_blank" class="card-link card-img-link">Anemoi</a></h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">This app takes the weather in a given city and uses it to
+                                    generate a
+                                    youtube music playlist.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://nobleburgundy.github.io/weather-jamz/" class="card-link">Link <i
+                                        class="fas fa-globe"></i></a>
+                                <a href="https://github.com/nobleburgundy/weather-jamz/" class="card-link">Repo <i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="./assets/img/day_planner.png" class="card-img" alt="Day Planner">
+                            <div class="card-img-overlay">
+                                <h2 class="card-title">
+                                    <a href="https://nobleburgundy.github.io/jcg-day-planner/" target="_blank"
+                                        class="card-link card-img-link">Day Planner</a>
+                                </h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">A simple app for planning the day.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://nobleburgundy.github.io/jcg-day-planner/" class="card-link">Link <i
+                                        class="fas fa-globe"></i></a>
+                                <a href="https://github.com/nobleburgundy/jcg-day-planner/" class="card-link">Repo <i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="./assets/img/weather_dash.png" class="card-img" alt="Weather Dash">
+                            <div class="card-img-overlay">
+                                <h2 class="card-title">
+                                    <a href="https://nobleburgundy.github.io/jcg-weather-dashboard/" target="_blank"
+                                        class="card-link card-img-link">Weather Dash</a>
+                                </h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">A basic dashboard for displaying the weather and the 5 day forecast
+                                    for a given city.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://nobleburgundy.github.io/jcg-weather-dashboard/" class="card-link">Link
+                                    <i class="fas fa-globe"></i></a>
+                                <a href="https://github.com/nobleburgundy/jcg-weather-dashboard/" class="card-link">Repo
+                                    <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="./assets/img/coding_quiz.png" class="card-img" alt="Weather Dash">
+                            <div class="card-img-overlay">
+                                <h2 class="card-title">
+                                    <a href="https://nobleburgundy.github.io/jcg-coding-quiz/" target="_blank"
+                                        class="card-link card-img-link">Coding Quiz</a>
+                                </h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Test your knowledge of HTML/CSS/JS with this fun game.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://nobleburgundy.github.io/jcg-coding-quiz/" class="card-link">Link
+                                    <i class="fas fa-globe"></i></a>
+                                <a href="https://github.com/nobleburgundy/jcg-coding-quiz/" class="card-link">Repo
+                                    <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="./assets/img/pizza_club.png" class="card-img" alt="Pizza Club">
+                            <div class="card-img-overlay">
+                                <h2 class="card-title">
+                                    <a href="https://nobleburgundy.github.io/pizza-club/" target="_blank"
+                                        class="card-link card-img-link">Pizza Club</a>
+                                </h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Welcome to Pizza Club.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://nobleburgundy.github.io/pizza-club/" class="card-link">Link
+                                    <i class="fas fa-globe"></i></a>
+                                <a href="https://github.com/nobleburgundy/pizza-club/" class="card-link">Repo
+                                    <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="./assets/img/personal_site.png" class="card-img" alt="Music">
+                            <div class="card-img-overlay">
+                                <h2 class="card-title">
+                                    <a href="https://nobleburgundy.github.io/" target="_blank"
+                                        class="card-link card-img-link">Music</a>
+                                </h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Personal music and gig listing site.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://nobleburgundy.github.io/" class="card-link">Link
+                                    <i class="fas fa-globe"></i></a>
+                                <div class="float-right">
+                                    <span><button type="button" id="play-btn"><i
+                                                class="far fa-play-circle"></i></button></span>
+                                    <audio id="audio-player" loop>
+                                        <source src="./assets/ginsberg_mountain.mp3">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </article>
     </main>
     <footer>
@@ -70,6 +183,25 @@
             </ul>
         </nav>
     </footer>
+    <script>
+        $(document).ready(function () {
+            let audioPlayer = $("#audio-player")[0];
+            $("#audio-player")[0].volume = 0.1;
+            $("#play-btn").on("click", function () {
+                console.log("test");
+                if ($(this).children(1).hasClass("fa-stop-circle")) {
+                    audioPlayer.pause();
+                    $(this).children(1).removeClass("far fa-stop-circle").addClass(
+                        "far fa-play-circle");
+                } else {
+                    audioPlayer.play();
+                    $(this).children(1).removeClass("far fa-play-circle").addClass(
+                        "far fa-stop-circle");
+                }
+            })
+        })
+    </script>
+
     <!-- Some JS libraries required to get navbar toggle to work -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

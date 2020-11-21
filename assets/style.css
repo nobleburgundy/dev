@@ -3,6 +3,10 @@ footer was covering text at certain break points. */
 
 .navbar-brand {
     font-size: 3rem;
+    text-shadow: 7px 1px #dfdfdf;
+}
+
+.navbar-brand:hover {
     text-shadow: 5px 1px #dfdfdf;
 }
 
@@ -20,6 +24,55 @@ footer .fab {
     opacity: 0.8;
 }
 
+.navbar-brand {
+    letter-spacing: 1rem;
+}
+
 .portfolio-img:hover {
     opacity: 1;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-img {
+    opacity: 0.5;
+}
+
+.card-img-overlay {
+    text-align: center;
+    padding-top: 25%;
+}
+
+.card-link {
+    position: relative;
+}
+
+.card-img-link {
+    color: #000000;
+}
+
+.card-img-link:hover {
+    color: #007bff;
+}
+
+#audio-player {
+    height: 1.5rem;
+    width: 250px;
+}
+
+#play-btn {
+    border: none;
+    background: none;
+    position: relative;
+    color: #007bff;
+}
+
+#play-btn:focus {
+    outline: none;
+}
+
+#about-img {
+    border-radius: 50%;
 }
