@@ -1,5 +1,8 @@
 /* Added padding on the bottom to fix issue where 
 footer was covering text at certain break points. */
+main {
+    padding-bottom: 50px;
+}
 
 .navbar-brand {
     font-size: 3rem;
@@ -75,5 +78,4 @@ footer .fab {
 
 #about-img {
     border-radius: 50%;
-    margin-right: 50px;
 }
