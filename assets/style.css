@@ -3,7 +3,7 @@ footer was covering text at certain break points. */
 
 .navbar-brand {
     font-size: 3rem;
-    text-shadow: 7px 1px #dfdfdf;
+    font-family: 'Bebas Neue';
 }
 
 .navbar-brand:hover {
