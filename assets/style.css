@@ -4,9 +4,18 @@ main {
     padding-bottom: 50px;
 }
 
+.navbar-brand,
+h1 {
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+}
+
 .navbar-brand {
     font-size: 3rem;
-    font-family: 'Bebas Neue';
+    letter-spacing: 1rem;
+}
+
+h1 {
+    letter-spacing: 0.5rem;
 }
 
 .navbar-brand:hover {
@@ -22,25 +31,18 @@ footer .fab {
     padding-left: 2rem;
 }
 
-.portfolio-img {
-    margin-bottom: 1rem;
-    opacity: 0.8;
-}
-
-.navbar-brand {
-    letter-spacing: 1rem;
-}
-
-.portfolio-img:hover {
-    opacity: 1;
-}
-
 .card {
     height: 100%;
 }
 
 .card-img {
     opacity: 0.5;
+    position: relative;
+    z-index: 1;
+}
+
+.card-img:hover {
+    opacity: 1.0;
 }
 
 .card-img-overlay {
