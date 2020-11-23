@@ -78,3 +78,32 @@ footer .fab {
 #about-img {
     border-radius: 50%;
 }
+
+@media (max-width:450px) {
+    .about {
+        text-align: center;
+    }
+
+    .navbar-brand {
+        letter-spacing: 0.5rem;
+        margin-right: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h3,
+    h2 {
+        text-align: justify;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    #email-span {
+        float: right;
+        padding-right: 1rem;
+    }
+}
