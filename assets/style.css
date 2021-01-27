@@ -35,6 +35,9 @@ footer .fab {
     opacity: 0.5;
     position: relative;
     z-index: 1;
+    width: 300;
+    height: 200;
+    max-height: 200;
 }
 
 .card-img:hover {
