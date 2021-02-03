@@ -1,7 +1,15 @@
+* {
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
 /* Added padding on the bottom to fix issue where 
 footer was covering text at certain break points. */
 main {
     padding-bottom: 50px;
+}
+
+ul {
+    list-style: none;
 }
 
 .navbar-brand,
@@ -81,6 +89,25 @@ footer .fab {
 #about-img {
     border-radius: 50%;
 }
+
+.project-block {
+    width: 400px;
+    height: 400px;
+    background-color: #007bff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project-block:hover {
+    border-radius: 50%;
+    text-align: right;
+    padding: 10%;
+}
+
+.project-link {
+    color: #000000;
+}
+
+.project-footer {}
 
 @media (max-width:450px) {
     .about {
