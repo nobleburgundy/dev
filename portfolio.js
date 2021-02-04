@@ -20,6 +20,7 @@ const portfolio = [
     title: "Weather Dash",
     thumbnail: "weather_dash.png",
     description: "A simple weather app to visualize weather and forecast by city.",
+    technologies: ["HTML/CSS", "jQuery", "YouTube API"],
     github: "https://nobleburgundy.github.com/weather-dash",
     link: "https://nobleburgundy.github.io/weather-dash/",
   },
