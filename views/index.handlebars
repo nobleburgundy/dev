@@ -1,0 +1,158 @@
+<!-- Wrapper -->
+<div id="wrapper">
+
+	<!-- Intro -->
+	<section class="intro">
+		<header>
+			<h1>James Gould</h1>
+			<p>Full Stack Developer</p>
+			<p style="font-family:'Courier New', Courier, monospace">HTML / CSS / JavaScript / C#</p>
+			<ul class="actions">
+				<li><a href="#about" class="arrow scrolly"><span class="label">Next</span></a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
+		</div>
+	</section>
+
+	<!-- About -->
+	<section id="about">
+		<header>
+			<h2>About</h2>
+			<ul class="actions">
+				<li><a href="#skills" class="arrow scrolly"><span class="label">Next</span></a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<p><strong>I love</strong> - especially with code. I like taking a user-first approach with a minimialist
+				aesthetic. Outside of coding, I play guitar in <a href="https://www.federalesmpls.com/"
+					target="_blank">The Federales</a>. I also play keys in the jazz quartet <a
+					href="https://mr500.bandcamp.com/" target="_blank">Mr 500</a>.
+				<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+		</div>
+	</section>
+
+	<!-- Skills -->
+	<section id="skills">
+		<header>
+			<h2>Skills</h2>
+			<ul class="actions">
+				<li><a href="#portfolio" class="arrow scrolly"><span class="label">Next</span></a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<p><strong>Skills I've aquired</strong> over the course of a 10+ year career in different aspects of the
+				software industry</p>
+			<ul class="feature-icons">
+				<li class="icon solid fa-code">Full Stack Development</li>
+				<li class="icon solid fa-bolt">Performance Tuning</li>
+				<li class="icon solid fa-signal">Automated Testing</li>
+				<li class="icon solid fa-cog">Dev/Ops</li>
+				<li class="icon solid fa-map-marker-alt">Remote Collaboration</li>
+				<li class="icon solid fa-laptop">UX/UI</li>
+			</ul>
+			<p>At the core of all of these skills is strong communication and collaboration skills.</p>
+		</div>
+	</section>
+
+	<!-- Portfolio -->
+	<section id="portfolio">
+		<header>
+			<h2 style="margin-bottom: 3%;">Portfolio</h2>
+			{{!-- <ul class="actions">
+				<li><a href="#contact" class="arrow scrolly"><span class="label">Next</span></a></li>
+			</ul> --}}
+		</header>
+		<div class="content">
+			<p><strong>Here are a few recent</strong> coding projects...</p>
+
+			<!-- Section -->
+			{{#each projects}}
+			<section>
+				<header>
+					<h3>{{title}}</h3>
+					<p>{{description}}</p>
+					<ul style="list-style: none; font-family:'Courier New', Courier, monospace; font-weight: 100;">
+						{{#each technologies}}
+						<li>{{this}}</li>
+						{{/each}}
+					</ul>
+					<a href="https://nobleburgundy.github.com" target="_blank">GitHub</a>
+				</header>
+				<div class="content">
+					<div class="gallery">
+						<a href="{{link}}" class="landscape"><img src="{{thumbnail}}" alt="" /></a>
+					</div>
+				</div>
+			</section>
+			{{/each}}
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section id="contact">
+		<header>
+			<h2>Get in touch</h2>
+		</header>
+		<div class="content">
+			<p><strong>Hit me up!</strong> Let me know if you're interested in collaboration, job opportunities, or
+				anything really (especially vintage guitars)...
+			</p>
+			<form>
+				<div class="fields">
+					<div class="field half">
+						<input type="text" name="name" id="name" placeholder="Name" />
+					</div>
+					<div class="field half">
+						<input type="email" name="email" id="email" placeholder="Email" />
+					</div>
+					<div class="field">
+						<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+					</div>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="button primary" /></li>
+				</ul>
+			</form>
+		</div>
+		<footer>
+			<ul class="items">
+				<li>
+					<h3>Email</h3>
+					<a href="#">goul0076@gmail.com</a>
+				</li>
+				<li>
+					<h3>Phone</h3>
+					<a href="#">(612) 868-1992</a>
+				</li>
+				<li>
+					<h3>Address</h3>
+					<span>4315 Grand Avenue, Minneapolis, MN 55409</span>
+				</li>
+				<li>
+					<h3><a href="https://docs.google.com/document/d/1VqBXR3RLn0FdijcVKQTqjWYkIzbRqA_URR0m37e7_q0/edit?usp=sharing"
+							target="_blank">Resume</a></h3>
+				</li>
+				<li>
+					<h3>Elsewhere</h3>
+					<ul class="icons">
+						<li><a href="https://nobleburgundy.github.com" target="_blank"
+								class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=13949399/" target="_blank"
+								class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/noble_burgundy/" target="_blank"
+								class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/james-gould-full-stack/" target="_blank"
+								class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</footer>
+	</section>
+
+	<!-- Copyright -->
+	<div class="copyright">&copy; James Gould. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.
+	</div>
+
+</div>
