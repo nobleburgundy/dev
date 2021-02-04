@@ -11,7 +11,7 @@ const portfolio = [
   {
     title: "Burger Bonanza",
     thumbnail: "burger_bonanza.png",
-    description: "A simple app demostration the use of a custom built orm.",
+    description: "A simple app demostration the use of a custom built ORM for database interactions.",
     technologies: ["Node", "Express", "Handlebars", "Custom ORM", "MySQL"],
     github: "https://nobleburgundy.github.com/burger-bonanza",
     link: "https://jcg-burger-bonanza.herokuapp.com/",
