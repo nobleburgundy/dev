@@ -14,10 +14,10 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-const portfolio = require("./portfolio");
+const portfolio_data = require("./portfolio-data");
 
 app.get("/", (req, res) => {
-  res.render("index", { projects: portfolio });
+  res.render("index", { projects: portfolio_data });
 });
 
 app.listen(PORT, () => {

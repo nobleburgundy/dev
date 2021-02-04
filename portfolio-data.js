@@ -17,14 +17,6 @@ const portfolio = [
     link: "https://jcg-burger-bonanza.herokuapp.com/",
   },
   {
-    title: "Weather Dash",
-    thumbnail: "weather_dash.png",
-    description: "A simple weather app to visualize weather and forecast by city.",
-    technologies: ["HTML/CSS", "jQuery", "AJAX", "OpenWeather API"],
-    github: "https://nobleburgundy.github.com/weather-dash",
-    link: "https://nobleburgundy.github.io/weather-dash/",
-  },
-  {
     title: "Anemoi",
     thumbnail: "anemoi.png",
     description: "An application that builds a playlist for you based on the current weather in a given city.",
