@@ -1,5 +1,6 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
+const cors = require("cors");
 
 const PORT = process.env.PORT || 8080;
 const app = express();
@@ -20,7 +21,8 @@ app.get("/", (req, res) => {
   res.render("index", { projects: portfolio_data });
 });
 
-app.get("/api/portfolio", (req, res) => {
+app.get("/api/portfolio", cors(), (req, res) => {
+  // res.header("Access-Control-Allow-Origin", "*");
   res.json(portfolio_data);
 });
 
