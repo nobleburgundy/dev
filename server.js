@@ -20,6 +20,10 @@ app.get("/", (req, res) => {
   res.render("index", { projects: portfolio_data });
 });
 
+app.get("/api/portfolio", (req, res) => {
+  res.json(portfolio_data);
+});
+
 app.listen(PORT, () => {
   console.log("Listening on port " + PORT);
 });
