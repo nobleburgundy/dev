@@ -23,16 +23,50 @@
 		<header>
 			<h2>About</h2>
 			<ul class="actions">
-				<li><a href="#skills" class="arrow scrolly"><span class="label">Next</span></a></li>
+				<li><a href="#experience" class="arrow scrolly"><span class="label">Next</span></a></li>
 			</ul>
 		</header>
 		<div class="content">
-			<p><strong>I love to build things</strong> - especially with code. I like taking a user-first approach with
+			<p><strong>I love to build things</strong> - especially with code. I take a user-first approach with
 				a minimalist
 				aesthetic. Outside of coding, I play guitar in <a href="https://www.federalesmpls.com/"
 					target="_blank">The Federales</a>. I also play keys in the jazz quartet <a
 					href="https://mr500.bandcamp.com/" target="_blank">Mr 500</a>.
 				<span class="image main"><img src="assets/img/personal/piano.jpg" alt="Playing Piano" /></span>
+		</div>
+	</section>
+
+	<!-- About -->
+	<section id="experience">
+		<header>
+			<h2>Professional Experience</h2>
+			<ul class="actions">
+				{{!-- <li><a href="#skills" class="arrow scrolly"><span class="label">Next</span></a></li> --}}
+			</ul>
+		</header>
+		<!-- Section -->
+		<div class="content">
+			{{!-- <p><strong>Here are a few recent</strong> coding projects...</p> --}}
+
+			<!-- Section -->
+			{{#each jobs}}
+			<section>
+				<header>
+					<h3>{{company}}</h3>
+					<p><i>{{startDate}} to {{endDate}}</i></p>
+				</header>
+				<div class="content">
+					<h2>{{jobTitle}}</h2>
+					<p>{{description}}</p>
+					<h4>Primary Tech Stack</h4>
+					<ul style="list-style: none; font-family:'Courier New', Courier, monospace; font-size:small;">
+						{{#each techStack}}
+						<li>{{this}}</li>
+						{{/each}}
+					</ul>
+				</div>
+			</section>
+			{{/each}}
 		</div>
 	</section>
 
@@ -72,6 +106,7 @@
 
 			<!-- Section -->
 			{{#each projects}}
+			{{#if show}}
 			<section>
 				<header>
 					<h3><a href="{{link}}" target="_blank">{{title}}</a></h3>
@@ -89,6 +124,7 @@
 					</div>
 				</div>
 			</section>
+			{{/if}}
 			{{/each}}
 		</div>
 	</section>

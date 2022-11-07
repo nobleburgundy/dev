@@ -7,6 +7,18 @@ const portfolio = [
     technologies: ["React"],
     github: "https://nobleburgundy.github.com/canopy/",
     link: "https://nobleburgundy.github.io/canopy/",
+    show: true
+  },
+  {
+    title: "YoGo",
+    description:
+      "YoGo is an app to help user prioritize self-care. Self-care is essential for our health and well-being, especially with increased stressors introduced within the last year. As a user, I want an app that will help me prioritize and manage my self-care practices and routines.",
+    thumbnail: "YOGO.jpg",
+    thumbnailPath: "https://james-gould.herokuapp.com/assets/img/YOGO.jpg",
+    technologies: ["React", "Node", "Express", "MongoDb", "Mongoose"],
+    github: "https://github.com/nobleburgundy/YoGo",
+    link: "https://yogood.herokuapp.com/",
+    show: true
   },
   {
     title: "Orbit",
@@ -17,6 +29,7 @@ const portfolio = [
     technologies: ["Node", "Express", "Handlebars", "MySQL", "Passport"],
     github: "https://nobleburgundy.github.com/orbit/",
     link: "https://wereinorbit.herokuapp.com/",
+    show: true
   },
   {
     title: "Mongo Fitness",
@@ -26,6 +39,7 @@ const portfolio = [
     technologies: ["Node", "Express", "Handlebars", "MongoDB"],
     github: "https://nobleburgundy.github.com/mongo-fitness/",
     link: "https://james-fitness-tracker.herokuapp.com/",
+    show: false
   },
   {
     title: "PWA Budget",
@@ -35,6 +49,7 @@ const portfolio = [
     technologies: ["Service Workers", "Webpack", "Babel", "Compression library", "IndexedDb"],
     github: "https://github.com/nobleburgundy/pwa-budget/",
     link: "https://jcg-pwa-budget.herokuapp.com/",
+    show: false
   },
   {
     title: "Burger Bonanza",
@@ -44,6 +59,7 @@ const portfolio = [
     technologies: ["Node", "Express", "Handlebars", "Custom ORM", "MySQL"],
     github: "https://nobleburgundy.github.com/burger-bonanza",
     link: "https://jcg-burger-bonanza.herokuapp.com/",
+    show: true
   },
   {
     title: "Anemoi",
@@ -53,6 +69,7 @@ const portfolio = [
     technologies: ["HTML/CSS", "jQuery", "AJAX", "YouTube API"],
     github: "https://nobleburgundy.github.com/anemoi",
     link: "https://nobleburgundy.github.io/anemoi/",
+    show: true
   },
 ];
 
