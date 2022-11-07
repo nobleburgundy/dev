@@ -9,12 +9,12 @@ const jobs = [
     techStack: ["Angular", "dotnet", "MongoDB", "Java"]
   },
   {
-    jobTitle: "Test Automation Architect",
+    jobTitle: "IT Test Lead",
     company: "Kincentric",
     startDate: "April 2021",
     endDate: "November 2022",
     reason: "Laid off due to company reduction",
-    description: "Lead a group of test automation engineers in building and maintaing a test automation framework with Selenium.",
+    description: "Led a group of test automation engineers in building and maintaing a test automation framework with Selenium.",
     techStack: ["C#", "Gerhkin", "Selenium"]
   },
   {
