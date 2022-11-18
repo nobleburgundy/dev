@@ -6,7 +6,7 @@ const jobs = [
     endDate: "Nov 2022",
     reason: "Laid off due to company reduction.",
     description: "Full stack engineer on a development team responsible for building and testing key company applications.",
-    techStack: ["Angular", "C#", "MongoDB", "Node", "Java", "Docker", "Jenkins"]
+    techStack: ["Angular", "C#", "MongoDB", "Node", "Java", "Docker", "Jenkins", "AWS"]
   },
   {
     jobTitle: "IT Test Lead",
@@ -24,7 +24,7 @@ const jobs = [
     endDate: "Nov 2018",
     reason: "Left to lead a group fo test engineers at Kincentric.",
     description: "Developed test automation framekwork for an internal CMS tool driving Target.com and email marketing teams.",
-    techStack: ["React", "PHP", "MongoDB", "Selenium", "Docker"]
+    techStack: ["React", "PHP", "MongoDB", "Selenium", "Docker", "CircleCI"]
   },
 ];
 
